@@ -1,5 +1,6 @@
 ---
 title: Installation
+chapter: I
 ---
 
 This is how you install stuff

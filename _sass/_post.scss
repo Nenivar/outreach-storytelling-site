@@ -1,0 +1,36 @@
+.title {
+    text-align: center;
+
+    h1 {
+        font-size:35px;
+    }
+    h2 {
+        margin-top: -15px;
+        font-size: 25px;
+    }
+}
+
+/* thx https://stackoverflow.com/questions/23610151/can-you-style-ordered-list-numbers */
+ol {
+    list-style: none;
+    counter-reset: item;
+
+    li {
+        counter-increment: item;
+        position: relative;
+        padding-left: 4em;
+
+        p:first-of-type {
+            font-size: 2em;
+        }
+    }
+    li:before {
+        content: counter(item);
+        position: absolute;
+        margin-left: -2em;
+        border-bottom: 3px solid black;
+        width: 1em;
+        text-align: center;
+        font-size: 2em;
+    }
+}
