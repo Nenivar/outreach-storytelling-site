@@ -1,5 +1,5 @@
 body {
-    background-color: brown;
+    background-color: #624a2e;
     color: #272727;
 }
 
@@ -10,4 +10,10 @@ body {
     max-width: 960px;
     background-color: whitesmoke;
     padding: 1em 0 1em 0;
+    box-shadow: 0 0 1em .1em;
+}
+
+.textcontainer {
+    width: 90%;
+    margin: 0 auto 0 auto;
 }
