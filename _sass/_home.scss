@@ -23,6 +23,22 @@
         background-color: blue;
         height: inherit;
         width: inherit;
+
+        .page {
+            position: inherit;
+            width: inherit;
+            height: inherit;
+            backface-visibility: hidden;
+
+            &.front {
+                background: blue;
+            }
+
+            &.back {
+                background: blue;
+                transform: rotateY(180deg);
+            }
+        }
         
         transition: transform 1s ease-out;
         transform-origin: left;
