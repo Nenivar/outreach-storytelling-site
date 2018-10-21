@@ -1,41 +1,61 @@
+$book-cover: #188e34;
+$book-cover-darker: #146828;
+$paper: #e8d3a0;
+$text-gold: #e2c51d;
+$text-black: #333;
+
+body {
+    background: url('/assets/images/core/bg-woods.jpg');
+    background-size: cover;
+}
+
 .book {
     width: 500px;
     height: 750px;
+    color: $text-gold;
+    margin: 0 auto 0 auto;
+    box-shadow: 0 0 1em .1em #333;
 
     .paper {
         position: absolute;
-        margin-left: 100px;
-        background-color: pink;
-        height: inherit;
+        background: $paper;
+        width: 470px;
+        height: 690px;
+        margin-top: 30px;
+    }
+
+    .back {
+        position: absolute;
+        background: $book-cover-darker;
         width: inherit;
+        height: inherit;
     }
 
     .spine {
         position: absolute;
-        background-color: darkblue;
+        margin-left: -40px;
+        background: $book-cover-darker;
         height: inherit;
-        width: 100px;
+        width: 40px;
     }
 
     .cover {
         position: absolute;
-        margin-left: 100px;
-        background-color: blue;
         height: inherit;
         width: inherit;
 
-        .page {
+        .side {
             position: inherit;
             width: inherit;
             height: inherit;
             backface-visibility: hidden;
 
             &.front {
-                background: blue;
+                background: $book-cover;
             }
 
             &.back {
-                background: blue;
+                background: $book-cover-darker;
                 transform: rotateY(180deg);
             }
         }
@@ -43,6 +63,23 @@
         transition: transform 1s ease-out;
         transform-origin: left;
         transform-style: preserve-3d;
+
+        &.opening {
+            transform: rotateY(180deg);
+        }
+    }
+
+    .middlepaper {
+        position: absolute;
+        background: $paper;
+        transform: none;
+        height: 690px;
+        width: 470px;
+        margin-top: 30px;
+
+        transform-style:preserve-3d;
+        transition: transform 2s ease-out;
+        transform-origin: left;
 
         &.opening {
             transform: rotateY(180deg);
