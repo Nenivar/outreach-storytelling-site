@@ -23,11 +23,13 @@
         background-color: blue;
         height: inherit;
         width: inherit;
+        
+        transition: transform 1s ease-out;
+        transform-origin: left;
+        transform-style: preserve-3d;
 
-        &:hover {
+        &.opening {
             transform: rotateY(180deg);
-            transform-origin: left;
-            transition: transform 2s;
         }
     }
 }
