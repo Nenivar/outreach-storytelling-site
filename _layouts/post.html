@@ -2,6 +2,13 @@
 layout: content
 chapter: _
 ---
+<div>
+    {% if page.next.url %}
+    <a class="prev" href="{{ page.next.url }}">⬅️
+        <!-- {{ page.next.title }} -->Prev. Chapter</a>
+    {% endif %}
+</div>
+
 <div class="title">
     <h1>Chapter {{ page.chapter }}</h1>
     <h2>{{ page.title }}</h2>
@@ -11,6 +18,7 @@ chapter: _
 
 <div>
     {% if page.previous.url %}
-        <a href="{{ page.previous.url }}">Next > {{ page.previous.title }}</a>
+    <a class="next" href="{{ page.previous.url }}">➡️️
+        <!-- {{ page.previous.title }} -->Next Chapter</a>
     {% endif %}
 </div>

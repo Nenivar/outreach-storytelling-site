@@ -28,9 +28,37 @@ ol {
         content: counter(item);
         position: absolute;
         margin-left: -2em;
-        border-bottom: 3px solid black;
+        margin-top: -.25em;
+        border-bottom: 3px double black;
         width: 1em;
         text-align: center;
-        font-size: 2em;
+        font-size: 2.5em;
     }
+}
+
+ul {
+    li:before {
+        content: '';
+        border: none;
+    }
+}
+
+.next {
+    text-decoration: none;
+    font-size: 2em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.prev {
+    text-decoration: none;
+    font-size: 2em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 700px;
+    border: solid 1px gray;
+    margin: 0 auto 0 auto;
 }

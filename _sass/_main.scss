@@ -1,6 +1,12 @@
 body {
+    margin: 0;
     background-color: #624a2e;
     color: #272727;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -10,10 +16,34 @@ body {
     max-width: 960px;
     background-color: whitesmoke;
     padding: 1em 0 1em 0;
-    box-shadow: 0 0 1em .1em;
+    /* box-shadow: 0 0 1em .1em; */
 }
 
 .textcontainer {
     width: 90%;
     margin: 0 auto 0 auto;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px double lightgray;
+    z-index: 100;
+
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.banner {
+    a {
+        display: block;
+        width: 150px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+#footer {
+    border-top: 1px double lightgray;
 }
