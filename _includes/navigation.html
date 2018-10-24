@@ -1,4 +1,4 @@
-<nav class="container" id="header">
+<nav class="container banner" id="header">
     {% for item in site.data.navigation %}
         <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
             {{ item.name }}
