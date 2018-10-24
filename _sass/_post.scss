@@ -37,6 +37,10 @@ ol {
 }
 
 ul {
+    li {
+        counter-increment: none;
+    }
+    
     li:before {
         content: '';
         border: none;
