@@ -13,8 +13,9 @@ $header-footer_height: 3em;
     background: whitesmoke;
 
     a {
-        line-height: $header-footer_height * 0.8;
+        line-height: $header-footer_height * 0.9;
         height: 100%;
+        color: initial;
     }
 }
 
@@ -29,12 +30,15 @@ $header-footer_height: 3em;
         #sidebar {
             grid-area: 1 / 1 / 2 / 2;
             border-right: 1px solid lightgray;
-            background: slategray;
+            background: lightgray;
 
             h2 {
                 text-align: center;                
             }
 
+            li {
+                margin-bottom: 0.5em;
+            }
             li a {
                 color: black;
                 text-decoration-style: -moz-none;
