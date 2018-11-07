@@ -21,8 +21,22 @@
             grid-area: 1 / 1 / 2 / 2;
             border-right: 1px solid lightgray;
             background: slategray;
+
+            li a {
+                color: black;
+                text-decoration-style: -moz-none;
+            }
+
+            li.current {
+                font-weight: bold;
+            }    
+            li.previous {
+                color: #505050;
+                a {
+                    color: #505050;
+                }
+            }
         }
-    
         #content {
             grid-area: 1 / 2 / 2 / 3;
             background: whitesmoke;
