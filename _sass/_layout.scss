@@ -15,18 +15,21 @@
 
     #split {
         display: grid;
-        grid-template: 1fr / 10em 1fr;
+        grid-template: 1fr / 11em 1fr;
         
         #sidebar {
             grid-area: 1 / 1 / 2 / 2;
             border-right: 1px solid lightgray;
             background: slategray;
 
+            h2 {
+                text-align: center;                
+            }
+
             li a {
                 color: black;
                 text-decoration-style: -moz-none;
             }
-
             li.current {
                 font-weight: bold;
             }    
@@ -40,6 +43,21 @@
         #content {
             grid-area: 1 / 2 / 2 / 3;
             background: whitesmoke;
+
+            .button {
+                appearance: button;
+                -moz-appearance: button;
+
+                text-decoration: none;
+                color: initial;
+                padding: 0.2em;
+            }
+            .next {
+                float: left;
+            }
+            .prev {
+                float: right;
+            }
         }
     }
 
@@ -55,5 +73,5 @@
 }
 
 .textcontainer {
-    padding: 0 0.5em 0 0.5em;
+    padding: 1em;
 }

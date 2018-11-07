@@ -4,6 +4,7 @@ chapter: _
 ---
 <div id="split">
     <div id="sidebar">
+        <h2>Contents</h2>
         <ul>
             {% for post in site.posts %}
                 <li type="I" {% if page.url == post.url %}class="current"{% endif %} {% if page.chapter > post.chapter %}class="previous"{% endif %}>
@@ -14,21 +15,26 @@ chapter: _
             {% endfor %}
         </ul>
     </div>
+
     <div id="content" class="textcontainer">
-        <div>
-            {% if page.next.url %}
-            <a class="prev" href="{{ page.next.url }}">
-                CHAPTER {{ page.next.chapter }}⬅</a>
-            {% endif %}
+        {% if page.next.url %}
+        <a class="button next" href="{{ page.next.url }}">
+            Back to <strong>CHAPTER {{ page.next.chapter }}</strong>...
+        </a>
+        <br>
+        {% endif %}
+
+        <div class="title">
+            <h1>Chapter {{ page.chapter }}</h1>
+            <h2>{{ page.title }}</h2>
         </div>
 
         {{ content }}
 
-        <div>
-            {% if page.previous.url %}
-            <a class="next" href="{{ page.previous.url }}">
-                ➡ CHAPTER {{ page.previous.chapter }}</a>
-            {% endif %}
-        </div>
+        {% if page.previous.url %}
+            <a class="button prev" href="{{ page.previous.url }}">
+                On to <strong>CHAPTER {{ page.previous.chapter }}</strong>!
+            </a>
+        {% endif %}
     </div>
 </div>
