@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: grid
 chapter: _
 ---
 <div id="split">
@@ -9,8 +9,21 @@ chapter: _
             <li>II</li>
         </ul>
     </div>
-    <div id="content">
-        <p>these are some words</p>
-        <p>here are some more for good measure</p>
+    <div id="content" class="textcontainer">
+        <div>
+            {% if page.next.url %}
+            <a class="prev" href="{{ page.next.url }}">
+                CHAPTER {{ page.next.chapter }}⬅</a>
+            {% endif %}
+        </div>
+
+        {{ content }}
+
+        <div>
+            {% if page.previous.url %}
+            <a class="next" href="{{ page.previous.url }}">
+                ➡ CHAPTER {{ page.previous.chapter }}</a>
+            {% endif %}
+        </div>
     </div>
 </div>

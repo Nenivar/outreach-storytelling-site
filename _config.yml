@@ -10,4 +10,4 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "content"
+      layout: "page"
