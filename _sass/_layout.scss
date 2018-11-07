@@ -1,12 +1,21 @@
+$header-footer_height: 3em;
+
 #wrapper {
     display: grid;
-    grid-template: 2.5em 1fr 2.5em / 1fr 960px 1fr;
+    grid-template-rows: $header-footer_height 1fr $header-footer_height;
+    grid-template-columns: 1fr 960px 1fr;
+    /* grid-template: $header-footer_height 1fr $header-footer_height / 1fr 960px 1fr; */
 }
 
 #header {
     grid-area: 1 / 2 / 2 / 3;
     border-bottom: 1px solid lightgray;
     background: whitesmoke;
+
+    a {
+        line-height: $header-footer_height * 0.8;
+        height: 100%;
+    }
 }
 
 #main {

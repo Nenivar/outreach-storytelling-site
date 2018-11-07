@@ -1,2 +1,6 @@
 - name: Home
   link: /
+- name: Getting Started
+  link: /start
+- name: About
+  link: /about
