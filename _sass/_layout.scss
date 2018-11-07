@@ -3,7 +3,7 @@ $header-footer_height: 3em;
 #wrapper {
     display: grid;
     grid-template-rows: $header-footer_height 1fr $header-footer_height;
-    grid-template-columns: 1fr 960px 1fr;
+    grid-template-columns: 1fr minmax(10%, 960px) 1fr;
     /* grid-template: $header-footer_height 1fr $header-footer_height / 1fr 960px 1fr; */
 }
 
