@@ -11,19 +11,22 @@
 
 #main {
     grid-area: 2 / 2 / 3 / 3;
+    background: whitesmoke;
 
-    display: grid;
-    grid-template: 1fr / 10em 1fr;
-
-    #sidebar {
-        grid-area: 1 / 1 / 2 / 2;
-        border-right: 1px solid lightgray;
-        background: slategray;
-    }
-
-    #content {
-        grid-area: 1 / 2 / 2 / 3;
-        background: whitesmoke;
+    #split {
+        display: grid;
+        grid-template: 1fr / 10em 1fr;
+        
+        #sidebar {
+            grid-area: 1 / 1 / 2 / 2;
+            border-right: 1px solid lightgray;
+            background: slategray;
+        }
+    
+        #content {
+            grid-area: 1 / 2 / 2 / 3;
+            background: whitesmoke;
+        }
     }
 }
 

@@ -1,8 +1,14 @@
 ---
-layout: default
+layout: bare
 ---
-<div class="container">
-    <div class="textcontainer">
-        {{ content }}  
+<div id="wrapper">
+    {% include header.html %}
+
+    <div id="main">
+        <div id="content">
+            {{ content }}
+        </div>
     </div>
+
+    {% include footer.html %}
 </div>
