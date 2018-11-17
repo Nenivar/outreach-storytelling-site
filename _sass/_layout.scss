@@ -46,6 +46,7 @@ $sidebar-phone_width: 3em;
             grid-area: 1 / 1 / 2 / 2;
             border-right: 1px solid lightgray;
             background: lightgray;
+            font-weight: normal;
 
             &_title {
                 @media only screen and (max-width: 640px) {
@@ -106,6 +107,8 @@ $sidebar-phone_width: 3em;
 
                         margin: auto 1em auto auto;
                         line-height: 3em;
+
+                        font-family: 'Playfair Display', serif;
 
                         @media only screen and (max-width: 640px) {
                             margin: auto;

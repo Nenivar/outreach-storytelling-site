@@ -1,3 +1,7 @@
+.highlight pre {
+    display: inline-block;
+  }
+
 .title {
     text-align: center;
 
@@ -58,6 +62,7 @@ blockquote {
     border-left: 6px double gray;
     margin-left: 0;
     padding-left: 10px;
+    color: gray;
 }
 
 pre.highlight {
