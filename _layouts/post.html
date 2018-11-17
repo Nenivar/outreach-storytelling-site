@@ -12,13 +12,13 @@ chapter: _
                     {{ post.title }}
                 </a>
             </li> -->
-            <a href="{{ post.url }}" class="sidebar_button {% if page.url == post.url %}current{% endif %}" >
-                <p class="sidebar_button_num">
+            <a href="{{ post.url }}" class="sidebar_button {% if page.url == post.url %}current{% endif %}{% if page.chapter > post.chapter %}previous{% endif %}" >
+                <h4 class="sidebar_button_num">
                     
-                </p>
-                <p class="sidebar_button_title">
+                </h4>
+                <h4 class="sidebar_button_title">
                     {{ post.title }}
-                </p>
+                </h4>
             </a>
         {% endfor %}
     </div>
