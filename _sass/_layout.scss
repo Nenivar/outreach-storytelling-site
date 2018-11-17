@@ -39,6 +39,20 @@ $sidebar-phone_width: 3em;
             border-right: 1px solid lightgray;
             background: lightgray;
 
+            &_title {
+                @media only screen and (max-width: 640px) {
+                    visibility: collapse;
+                }
+
+                &__phone {
+                    visibility: collapse;
+
+                    @media only screen and (max-width: 640px) {
+                        visibility: visible;
+                    }
+                }
+            }
+
             h2 {
                 text-align: center;                
             }
@@ -67,7 +81,7 @@ $sidebar-phone_width: 3em;
 
             &_button {
                 width: 100%;
-                height: 3em;
+                height: 4em;
                 display: flex;
                 text-decoration: none;
                 color: initial;
@@ -75,17 +89,45 @@ $sidebar-phone_width: 3em;
                 &_num {
                     width: 3em;
                     text-align: right;
+                    margin: auto;
 
                     &::before {
                         content: counter(c, lower-roman) '.';
                         counter-increment: c;
                         margin-right: 0.5em;
+
+                        margin: auto 1em auto auto;
+                        line-height: 3em;
+
+                        @media only screen and (max-width: 640px) {
+                            margin: auto;
+                            content: counter(c, lower-roman);
+                        }
+                    }
+
+                    @media only screen and (max-width: 640px) {
+                        text-align: center;
+                        width: $sidebar-phone_width;
+                        height: $sidebar-phone_width;
                     }
                 }
 
                 &_title {
-                    text-align: left;
+                    margin: auto;
                     width: $sidebar_width - 3em;
+                    text-align: left;
+
+                    @media only screen and (max-width: 640px) {
+                        visibility: collapse;
+                    }
+                }
+
+                @media only screen and (max-width: 640px) {
+                    height: $sidebar-phone_width;
+                }
+
+                &.current {
+                    background-color: aqua;
                 }
             }
 
@@ -95,9 +137,9 @@ $sidebar-phone_width: 3em;
                 display: flex;
                 flex-direction: column;
 
-                @media only screen and (max-width: 640px) {
+                /* @media only screen and (max-width: 640px) {
                     visibility: visible;
-                }
+                } */
 
                 counter-reset: c;
 
