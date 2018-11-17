@@ -12,28 +12,27 @@
 
 /* thx https://stackoverflow.com/questions/23610151/can-you-style-ordered-list-numbers */
 ol {
-    list-style: none;
     counter-reset: item;
+    list-style: none;
 
     li {
         counter-increment: item;
         position: relative;
-        padding-left: 4em;
 
         p:first-of-type {
-            font-size: 2em;
+            font-size: 1.5em;
             font-family: 'Playfair Display', serif;
         }
     }
     li:before {
         content: counter(item);
         position: absolute;
-        margin-left: -2em;
-        margin-top: -.25em;
+        margin-left: -1.5em;
+        margin-top: -.2em;
         border-bottom: 3px double black;
         width: 1em;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 1.5em;
         font-family: 'Playfair Display', serif;
     }
 }
@@ -64,4 +63,4 @@ blockquote {
 pre.highlight {
     padding: 20px;
     background-color: lightgray;
-}   
+}
