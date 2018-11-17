@@ -3,17 +3,30 @@ layout: grid
 chapter: _
 ---
 <div id="split">
-    <div id="sidebar">
+    <div class="sidebar">
         <h2>Contents</h2>
-        <ul>
-            {% for post in site.posts %}
-                <li type="I" {% if page.url == post.url %}class="current"{% endif %} {% if page.chapter > post.chapter %}class="previous"{% endif %}>
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
+        {% for post in site.posts %}
+            <!-- <li type="I" {% if page.url == post.url %}class="current"{% endif %} {% if page.chapter > post.chapter %}class="previous"{% endif %}>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </li> -->
+            <a href="{{ post.url }}" class="sidebar_button">
+                <p class="sidebar_button_num">
+                    
+                </p>
+                <p class="sidebar_button_title">
+                    {{ post.title }}
+                </p>
+            </a>
+        {% endfor %}
+    </div>
+    <!--sidebar for phones is hidden underneath-->
+    <div class="sidebar sidebar__phone">
+        <h2>C.</h2>
+        {% for post in site.posts %}
+        <a href="{{ post.url }}" class="sidebar__phone_button"></a>
+        {% endfor %}
     </div>
 
     <div id="content" class="textcontainer">
