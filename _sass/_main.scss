@@ -1,8 +1,11 @@
+$font_text: 'Lato', sans-serif;
+$font_head: 'Playfair Display', serif;
+
 body {
     margin: 0;
     background-color: #624a2e;
     color: #272727;
-    font-family: 'Lato', sans-serif;
+    font-family: $font_text;
 }
 
 .playfair {

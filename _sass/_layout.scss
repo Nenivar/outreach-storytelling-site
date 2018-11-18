@@ -101,7 +101,7 @@ $sidebar-phone_width: 3em;
                     margin: auto;
 
                     &::before {
-                        content: counter(c, lower-roman) '.';
+                        content: counter(c, upper-roman) '.';
                         counter-increment: c;
                         margin-right: 0.5em;
 
@@ -112,7 +112,7 @@ $sidebar-phone_width: 3em;
 
                         @media only screen and (max-width: 640px) {
                             margin: auto;
-                            content: counter(c, lower-roman);
+                            content: counter(c, upper-roman);
                         }
                     }
 
@@ -124,7 +124,7 @@ $sidebar-phone_width: 3em;
                 }
 
                 &_title {
-                    margin: auto;
+                    margin: auto 1em auto auto;
                     width: $sidebar_width - 4em;
                     text-align: left;
 

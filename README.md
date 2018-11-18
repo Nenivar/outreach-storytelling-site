@@ -25,9 +25,18 @@
 
 ### Advanced
 
-1. Multiple scenes
-2. Saving/loading
-3. Concurrent actions
+1. Explanation of game loop
+2. Multiple scenes
+3. Saving/loading
+4. Concurrent actions
+
+---
+
+## Style guide:
+
+* **bold** -> keywords
+* *italics* -> 
+* > blockquote -> non-essential info.
 
 ---
 
@@ -39,11 +48,15 @@
 [] Action reference list
 [] Background reference list
 [] Smaller images
-[] Code highlighting
+[] Code highlighting/lines
 
-## TODO Release 1.1
+## TODO Release 1.+
 
+[] Guide for people running the workshop
+[] Clean up SCSS
 [] Opening page
 [] About page
 [] Footer
 [] Moving contents section
+[] Idea examples generator
+[] Trinket on site

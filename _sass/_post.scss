@@ -15,6 +15,7 @@
 }
 
 /* thx https://stackoverflow.com/questions/23610151/can-you-style-ordered-list-numbers */
+
 ol {
     counter-reset: item;
     list-style: none;
@@ -25,7 +26,12 @@ ol {
 
         p:first-of-type {
             font-size: 1.5em;
-            font-family: 'Playfair Display', serif;
+            font-family: $font_head;
+        }
+
+        blockquote p:first-of-type {
+            font-size: initial;
+            font-family: $font_text;
         }
     }
     li:before {
