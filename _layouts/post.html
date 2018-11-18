@@ -2,6 +2,7 @@
 layout: grid
 chapter: _
 ---
+
 <div id="split">
     <div class="sidebar">
         <h2 class="sidebar_title">Contents</h2>
@@ -19,6 +20,7 @@ chapter: _
     <div id="content" class="textcontainer">
         {% if page.next.url %}
         <a class="button next" href="{{ page.next.url }}">
+            <img src="/assets/images/core/icons/left_chevron.svg" height="11px" class="no-border"/>
             Back to <strong>CHAPTER {{ page.next.chapter }}</strong>...
         </a>
         <br>
@@ -34,6 +36,7 @@ chapter: _
         {% if page.previous.url %}
             <a class="button prev" href="{{ page.previous.url }}">
                 On to <strong>CHAPTER {{ page.previous.chapter }}</strong>!
+                <img src="/assets/images/core/icons/right_chevron.svg" height="11px" class="no-border"/>
             </a>
         {% endif %}
     </div>

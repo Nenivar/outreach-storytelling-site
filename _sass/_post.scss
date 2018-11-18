@@ -15,20 +15,19 @@
 }
 
 /* thx https://stackoverflow.com/questions/23610151/can-you-style-ordered-list-numbers */
-
 ol {
     counter-reset: item;
     list-style: none;
-
+    
     li {
         counter-increment: item;
         position: relative;
-
+        
         p:first-of-type {
             font-size: 1.5em;
             font-family: $font_head;
         }
-
+        
         blockquote p:first-of-type {
             font-size: initial;
             font-family: $font_text;
@@ -74,4 +73,20 @@ blockquote {
 pre.highlight {
     padding: 20px;
     background-color: lightgray;
+}
+
+/* 
+    stuff used in kramdown
+*/
+
+.no-border {
+    border: none;
+    img {
+        border: none;
+    }
+}
+
+.center {
+    display: block;
+    margin: auto;
 }
