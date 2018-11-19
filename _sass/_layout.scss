@@ -177,6 +177,7 @@ $sidebar-phone_width: 3em;
         #content {
             grid-area: 1 / 2 / 2 / 3;
             background: whitesmoke;
+            min-height: 600px;
 
             .button {
                 appearance: button;
