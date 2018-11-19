@@ -47,7 +47,7 @@
 [] Emoji reference list
 [] Action reference list
 [] Background reference list
-[] Smaller images
+[x] Smaller images
 [] Code highlighting/lines
 
 ## TODO Release 1.+
