@@ -1,0 +1,29 @@
+$block_w: 8em;
+$block_h: 10em;
+
+#reference__cont {
+    display: flex;
+    justify-content: center;
+    
+    .block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: $block_w;
+        height: $block_h;
+        border: 1px solid gray;
+        
+        img {
+            height: 70%;
+            width: 100%;
+            border: none;
+        }
+        p {
+            width: 100%;
+            height: 30%;
+            margin: auto;
+            text-align: center;
+            background: grey;
+        }
+    }
+}
