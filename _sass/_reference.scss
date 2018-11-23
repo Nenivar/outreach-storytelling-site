@@ -3,6 +3,7 @@ $block_h: 10em;
 
 #reference__cont {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
     .block {
@@ -11,19 +12,21 @@ $block_h: 10em;
         flex-direction: column;
         width: $block_w;
         height: $block_h;
+        margin: 0 1em 1em 0;
         border: 1px solid gray;
         
         img {
-            height: 70%;
-            width: 100%;
+            height: 80%;
             border: none;
         }
         p {
             width: 100%;
-            height: 30%;
+            height: 20%;
             margin: auto;
             text-align: center;
+            line-height: 0.2 * $block_h;
             background: grey;
+            color: whitesmoke;
         }
     }
 }

@@ -1,11 +1,21 @@
 ---
 title: Python Storytelling | Reference
-layout: grid
+layout: page
 ---
 
+<h1>Emoji</h1>
+
 <div id="reference__cont">
-    <div class="block">
-        <img src="assets/images/core/icons/down_arrow.svg"/>
-        <p>words</p>
-    </div>
+    {% for image in site.static_files %}
+        {% if image.path contains 'assets/images/core/reference/emoji' %}
+            <div class="block">
+                <img src="{{ image.path }}"/>
+                <p>{{ image.basename }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
 </div>
+
+<h1>Backgrounds</h1>
+
+<h1>Actions</h1>
