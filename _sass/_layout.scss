@@ -12,6 +12,14 @@ $sidebar-phone_width: 3em;
 #header {
     grid-area: 1 / 2 / 2 / 3;
     border-bottom: 1px solid lightgray;
+}
+
+#footer {
+    grid-area: 3 / 2 / 4 / 3;
+    border-top: 1px solid lightgray;
+}
+
+.banner {
     background: whitesmoke;
 
     a {
@@ -199,12 +207,6 @@ $sidebar-phone_width: 3em;
     img {
         max-width: 100%;
     }
-}
-
-#footer {
-    grid-area: 3 / 2 / 4 / 3;
-    border-top: 1px solid lightgray;
-    background: whitesmoke;
 }
 
 .textcontainer {
