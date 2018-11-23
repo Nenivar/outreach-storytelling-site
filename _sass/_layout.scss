@@ -34,6 +34,10 @@ $sidebar-phone_width: 3em;
         @media only screen and (max-width: 640px) {
             width: 7em;
         }
+
+        &.current {
+            background: grey;
+        }
     }
 }
 

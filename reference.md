@@ -1,5 +1,5 @@
 ---
-title: Python Storytelling | Reference
+title: 🐍📙 | Reference
 layout: page
 ---
 
@@ -44,6 +44,8 @@ For example, `ActionMove(1000, laughing, Vector2(10, 30))` moves the emoji with 
 
 ### ActionScale
 
+Scales an emoji by a given factor.
+
 ```python
 """ duration :: int
     emoji    :: Emoji
@@ -52,9 +54,10 @@ For example, `ActionMove(1000, laughing, Vector2(10, 30))` moves the emoji with 
 ActionScale(duration, emoji, scale)
 ```
 For example, `ActionScale(500, laughing, 2)` scales the emoji with variable name `laughing` by a factor of `2` in `500`ms (half a second).
-```
 
 ### ActionText
+
+Displays some text for an amount of time.
 
 ```python
 """ duration :: int
@@ -65,6 +68,8 @@ ActionScale(duration, text)
 For example, `ActionScale(2000, 'Hello!')` displays the text `'Hello!'` for `2000`ms (two seconds).
 
 ### ActionChange
+
+Changes the image of one emoji to another.
 
 ```python
 """ emoji       :: Emoji

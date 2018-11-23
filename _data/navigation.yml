@@ -1,6 +1,6 @@
-- name: Getting Started
-  link: /start
 - name: About
-  link: /about
+  link: /about.html
+- name: Getting Started
+  link: /start.html
 - name: Reference
-  link: /reference
+  link: /reference.html
