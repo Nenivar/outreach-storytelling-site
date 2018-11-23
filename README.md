@@ -43,20 +43,34 @@
 ## TODO Release 1.0
 
 [] Write stuff
+
 [] New background
+
 [] Emoji reference list
+
 [] Action reference list
+
 [] Background reference list
+
 [x] Smaller images
+
 [] Code highlighting/lines
+
 
 ## TODO Release 1.+
 
 [] Guide for people running the workshop
+
 [] Clean up SCSS
+
 [] Opening page
+
 [] About page
+
 [] Footer
+
 [] Moving contents section
+
 [] Idea examples generator
+
 [] Trinket on site
