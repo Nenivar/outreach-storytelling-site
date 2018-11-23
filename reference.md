@@ -21,7 +21,7 @@ myEmoji = Emoji('angry')
         {% if image.path contains 'assets/images/core/reference/emoji' %}
             <div class="block">
                 <img src="{{ image.path }}"/>
-                <p>`{{ image.basename }}`</p>
+                <p>{{ image.basename }}</p>
             </div>
         {% endif %}
     {% endfor %}
