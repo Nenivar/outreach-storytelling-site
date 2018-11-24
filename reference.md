@@ -27,6 +27,8 @@ myEmoji = Emoji('angry')
     {% endfor %}
 </div>
 
+---
+
 ## Actions
 
 ### ActionMove
@@ -122,8 +124,9 @@ For example, `ActionScale(2000, 'Hello!')` displays the text `'Hello!'` for `200
 Changes the colour of the background of a scene.
 
 ```python
-duration :: int
-col      :: (int, int, int)
+""" duration :: int
+    col      :: (int, int, int)
+"""
 ActionChangeBGCol(duration, col)
 ```
 For example, `ActionChangeBGCol(1000, COL_RED)` changes the background of the scene the action is added to, to `COL_RED` (red) over `1000`ms (one second).
